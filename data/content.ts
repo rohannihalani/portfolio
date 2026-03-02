@@ -114,6 +114,13 @@ export const leadership = [
 // ─── PROJECTS ─────────────────────────────────
 export const projects = [
   {
+    name: "Rhome",
+    description:
+      "Full-stack social recommendation platform built with Go and React Native. Scaled to 1,000+ active users and 3,000+ recommendations with a consistent 10% MoM growth rate.",
+    tags: ["Go", "React Native", "AWS", "DynamoDB", "S3"],
+    link: null as string | null,
+  },
+  {
     name: "AI Document Summarizer — Custom Testing Framework",
     description:
       "Custom Python testing framework for an AI summarizer using singleton + decorator-based design. Supports deterministic, exception-based, and non-deterministic test cases with a CLI-driven, CI/CD-ready test runner and JSON reporting.",
@@ -133,7 +140,7 @@ export const projects = [
 export const education = {
   school: "University of California, Santa Barbara",
   degree: "Bachelor of Science in Computer Science",
-  dates: "2024 – 2027",
+  dates: "2024 - 2028",
   location: "Santa Barbara, California",
   gpa: "3.92 / 4.00",
   coursework: [
@@ -147,8 +154,33 @@ export const education = {
 
 // ─── SKILLS ───────────────────────────────────
 export const skills = {
-  Languages: ["Python", "JavaScript", "TypeScript", "C++", "Java", "Go", "Swift", "SQL"],
-  Frameworks: ["React.js", "Next.js", "React Native", "Node.js", "Django", "Gin", "NumPy", "Scikit-Learn"],
-  "Cloud & Infra": ["AWS Lambda", "EC2", "DynamoDB", "S3", "Cognito", "EventBridge"],
+  Languages: [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "C++",
+    "Java",
+    "Go",
+    "Swift",
+    "SQL",
+  ],
+  Frameworks: [
+    "React.js",
+    "Next.js",
+    "React Native",
+    "Node.js",
+    "Django",
+    "Gin",
+    "NumPy",
+    "Scikit-Learn",
+  ],
+  "Cloud & Infra": [
+    "AWS Lambda",
+    "EC2",
+    "DynamoDB",
+    "S3",
+    "Cognito",
+    "EventBridge",
+  ],
   Tools: ["Git", "Claude Code", "Cursor", "Windsurf"],
 };

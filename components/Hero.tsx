@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { personal } from "@/data/content";
+import { GithubIcon, LinkedinIcon, MailIcon } from "./Icons";
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
 
@@ -67,28 +68,31 @@ export default function Hero() {
         <motion.div {...item(0.75)} className="flex flex-col gap-2 text-xs text-ink-secondary shrink-0">
           <span>{personal.title}</span>
           <span>{personal.location}</span>
-          <div className="flex items-center gap-4 mt-1">
+          <div className="flex items-center gap-3 mt-1">
             <a
               href={personal.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="link-hover hover:text-ink transition-colors duration-200"
+              aria-label="GitHub"
+              className="text-ink-secondary hover:text-ink transition-colors duration-200"
             >
-              GitHub
+              <GithubIcon className="w-4 h-4" />
             </a>
             <a
               href={personal.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="link-hover hover:text-ink transition-colors duration-200"
+              aria-label="LinkedIn"
+              className="text-ink-secondary hover:text-ink transition-colors duration-200"
             >
-              LinkedIn
+              <LinkedinIcon className="w-4 h-4" />
             </a>
             <a
               href={`mailto:${personal.email}`}
-              className="link-hover hover:text-ink transition-colors duration-200"
+              aria-label="Email"
+              className="text-ink-secondary hover:text-ink transition-colors duration-200"
             >
-              Email
+              <MailIcon className="w-4 h-4" />
             </a>
           </div>
         </motion.div>

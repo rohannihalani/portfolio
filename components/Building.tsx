@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { building } from "@/data/content";
 import { FadeIn, Stagger } from "./FadeIn";
 import SectionLabel from "./SectionLabel";
@@ -19,11 +18,11 @@ export default function Building() {
           </h2>
         </FadeIn>
 
-        <Stagger className="grid sm:grid-cols-2 gap-4" stagger={0.1} delay={0.1}>
+        <Stagger className="grid sm:grid-cols-2 gap-4 [&>*]:h-full" stagger={0.1} delay={0.1}>
           {building.map((item) => (
             <div
               key={item.name}
-              className="group bg-white rounded-2xl p-6 border border-border hover:border-ink/20 transition-all duration-300 hover:shadow-[0_4px_24px_rgba(0,0,0,0.06)]"
+              className="group bg-white rounded-2xl p-6 border border-border hover:border-ink/20 transition-all duration-300 hover:shadow-[0_4px_24px_rgba(0,0,0,0.06)] flex flex-col h-full"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -35,7 +34,7 @@ export default function Building() {
                 </span>
               </div>
 
-              <p className="text-sm text-ink-secondary leading-relaxed mb-4">{item.description}</p>
+              <p className="text-sm text-ink-secondary leading-relaxed mb-4 flex-grow">{item.description}</p>
 
               <div className="flex flex-wrap gap-1.5">
                 {item.tags.map((tag) => (

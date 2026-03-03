@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { personal } from "@/data/content";
 import { GithubIcon, LinkedinIcon, MailIcon } from "./Icons";
 
@@ -66,6 +67,17 @@ export default function Hero() {
         </motion.p>
 
         <motion.div {...item(0.75)} className="flex flex-col gap-2 text-xs text-ink-secondary shrink-0">
+          {personal.photo && (
+            <div className="relative w-14 h-14 rounded-full overflow-hidden border border-border mb-1">
+              <Image
+                src={`/${personal.photo}`}
+                alt={personal.name}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
           <span>{personal.title}</span>
           <span>{personal.location}</span>
           <div className="flex items-center gap-3 mt-1">

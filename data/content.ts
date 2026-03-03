@@ -11,27 +11,27 @@ export const personal = {
   title: "Builder & Engineer",
 
   // 2–4 sentences about yourself. Keep it personal.
-  bio: "I'm a sophomore CS student at UCSB who likes building things people actually use. I co-founded Rhome, where I architect the full stack and keep the growth moving. I care about fast systems, clean code, and products that feel effortless.",
+  bio: "I'm a computer science student at UC Santa Barbara, passionate about building products that solve real problems, especially at the intersection of technology, media, and human connection. I’m currently working on Rhome, a platform for sharing and discovering trusted media recs from friends. I love learning new technologies, exploring the outdoors, and playing piano in my free time.",
 
-  location: "Santa Barbara, CA",
+  location: "Santa Barbara / Bay Area",
   email: "rohannihalani@ucsb.edu",
   phone: "925-519-8175",
   github: "https://github.com/rohannihalani",
   linkedin: "https://www.linkedin.com/in/rohannihalani",
 
   // Drop a photo in /public/ and update the path, or leave null for initials
-  photo: null as string | null,
+  photo: "rohan.JPG",
 };
 
 // ─── INTERESTS ────────────────────────────────
 // Replace / add your own
 export const interests: string[] = [
-  "Distributed systems",
   "Entrepreneurship",
-  "Music",
-  "Photography",
+  "Piano",
+  "Hiking",
   "Startups",
-  "Coffee",
+  "System Design",
+  "Surfing",
   // add more or swap these out
 ];
 
@@ -43,7 +43,7 @@ export const building = [
     description:
       "A social recommendation platform built on Go and React Native. 1,000+ active users, 3,000+ recommendations, and 10% MoM growth since launch.",
     tags: ["Go", "React Native", "AWS", "DynamoDB", "S3"],
-    link: null as string | null, // add URL when ready
+    link: "https://rhomeapp.com", // add URL when ready
     status: "Active" as const,
   },
   {
@@ -118,7 +118,7 @@ export const projects = [
     description:
       "Full-stack social recommendation platform built with Go and React Native. Scaled to 1,000+ active users and 3,000+ recommendations with a consistent 10% MoM growth rate.",
     tags: ["Go", "React Native", "AWS", "DynamoDB", "S3"],
-    link: null as string | null,
+    link: "https://rhome.app" as string | null,
   },
   {
     name: "AI Document Summarizer — Custom Testing Framework",

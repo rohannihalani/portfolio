@@ -140,7 +140,7 @@ export const projects = [
 export const education = {
   school: "University of California, Santa Barbara",
   degree: "Bachelor of Science in Computer Science",
-  dates: "2024 - 2028",
+  dates: "2024 - 2027",
   location: "Santa Barbara, California",
   gpa: "3.92 / 4.00",
   coursework: [
